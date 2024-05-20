@@ -1,0 +1,85 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para el título principal */
+h1 {
+    color: #007bff;
+    text-align: center;
+}
+
+/* Estilo para el menú desplegable */
+#countrySelect {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+    appearance: none;
+}
+
+/* Estilo para el cuadro de información del país */
+#countryInfo {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo para el mapa */
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+/* Estilo para los elementos de formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilo para los botones */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para los botones de información */
+.info-btn {
+    background-color: #17a2b8;
+}
+
+/* Estilo para los botones de éxito */
+.success-btn {
+    background-color: #28a745;
+}
+
+/* Estilo para los botones de error */
+.error-btn {
+    background-color: #dc3545;
+}
+
+/* Estilo para los botones de advertencia */
+.warning-btn {
+    background-color: #ffc107;
+}
