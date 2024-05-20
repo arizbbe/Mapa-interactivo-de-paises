@@ -1,86 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <head>
+        <!-- ... tus otras etiquetas head ... -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-XXXXXXXXX-X');
+        </script>
+    </head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa Interactivo de Países</title>
+    <title>Mapa Interactivo</title>
     <style>
+        /* Estilos básicos para mejorar la apariencia */
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #f0f2f5;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            margin-bottom: 20px;
+            justify-content: center;
         }
         #map {
-            height: 500px;
-            width: 100%;
-            max-width: 800px;
-            margin-bottom: 20px;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        #countrySelect {
-            width: 100%;
-            max-width: 800px;
-            padding: 10px;
-            font-size: 16px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            height: 500px; /* Altura del mapa */
+            width: 80%; /* Ancho del mapa */
+            margin: 20px 0;
         }
         #countryInfo {
-            width: 100%;
-            max-width: 800px;
-            border: 1px solid #ccc;
+            width: 80%;
             padding: 20px;
-            border-radius: 10px;
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        #photoContainer {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
+        img {
+            margin: 10px;
         }
-        #photoContainer img {
-            max-width: 100px;
-            height: auto;
-            border-radius: 5px;
-            transition: transform 0.3s;
-        }
-        #photoContainer img:hover {
-            transform: scale(1.1);
-        }
-        .author {
-            position: fixed;
-            left: 10px;
-            bottom: 10px;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        .adsense {
+            width: 80%;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <h1>Mapa Interactivo de Países</h1>
-    <div id="map"></div>
+    <h1>Mapa Interactivo</h1>
     <select id="countrySelect">
         <option value="">Seleccione un país</option>
     </select>
-    <div id="countryInfo">
-        <h2>Información del País</h2>
-        <div id="photoContainer"></div>
+    <div id="map"></div>
+    <div id="countryInfo"></div>
+
+    <!-- Google AdSense Code -->
+    <div class="adsense">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Replace with your own AdSense code -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
+
+
     <div class="author">
         <p>Hecho por: Arizbee Galindo, Sebastian Robles, Luis Martinez</p>
     </div>
